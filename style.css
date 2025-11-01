@@ -1,0 +1,60 @@
+header {
+    padding-top: 40px;
+    padding-left: 100px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(53, 51, 51);
+    height: 200px;
+}
+
+.menu {
+    background-color: rgb(233, 235, 236);
+    font-style: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    padding-top: 10px;
+}
+
+main div {
+    background-color: rgb(237, 233, 233);
+    border: 1px solid rgb(243, 238, 238);
+    padding: 10px;
+    font-size: 10px;
+}
+
+main {
+    gap: 15px;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 
+    'Layout Layout Video'
+    'Started Started Started'
+    'Examples Patterns Patterns'
+    'Resources Resources LayoutNews'
+    'Questions About News'
+    'GridBugs GridBugs GridBugs'
+    ;
+
+    grid-template-columns: 3fr 1fr 2r;
+    grid-template-rows: 3fr 1fr 2fr 2fr 2fr 0.5fr;
+}
+
+.Layout {grid-area: Layout; background-color: black; color: white;}
+.Video {grid-area: Video;}
+.Started {grid-area: Started; background-color: purple; color: white;}
+.Examples {grid-area: Examples;}
+.Patterns {grid-area: Patterns;}
+.Resources {grid-area: Resources;}
+.LayoutNews {grid-area: LayoutNews;}
+.Questions {grid-area: Questions;}
+.About {grid-area: About;}
+.News {grid-area: News; grid-template-columns: 2fr;}
+.GridBugs {grid-area: GridBugs;}
+
+.Footer {
+    background-color: black;
+    height: 50px;
+    
+}
